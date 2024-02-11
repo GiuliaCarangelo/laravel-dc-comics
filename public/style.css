@@ -51,6 +51,7 @@ header .main-logo{
     margin-left: 15px;
     margin-top: 20px;
     height: 320px;
+    width: 900px;
 }
 
 .info-column{
@@ -92,7 +93,6 @@ header .main-logo{
 .img-thumbnail{
     max-width: 100%;
     max-height: 100%;
-    margin-top: 27px;
     transition: transform 250ms;
     z-index: 1;
     object-fit: contain;
@@ -101,6 +101,11 @@ header .main-logo{
 .img-thumbnail:hover{
     transform: translate(20px, -20px);
     z-index: 1;
+}
+
+.subtext-container{
+    padding-left: 9rem;
+    padding-top: 1rem;
 }
 
 .subtext-container h3{
