@@ -2,6 +2,27 @@ body{
     background: rgb(2,0,36);
     background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,12,121,1) 27%, rgba(255,0,0,1) 100%);
     overflow-x: hidden;
+    background-attachment: fixed
+}
+
+header{
+    padding-top: 20px;
+}
+
+.row-container{
+    height: 350px;
+}
+
+.section-bg:last-child{
+    margin-bottom: 6rem;
+}
+
+header .main-logo{
+    width: 28%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-container{
@@ -11,10 +32,15 @@ body{
 .section-bg{
     background-color: rgba(240, 248, 255, 0.4);
     position: relative;
-    width: 1700px;
+    width: 1900px;
     left: 150px;
-    height: 350px;
+    height: 380px;
     border-radius: 20px;
+}
+
+.img-container{
+    width: 400px;
+    height: 350px;
 }
 
 .section-bg *{
@@ -22,12 +48,28 @@ body{
 }
 
 .info-container{
-    margin-left: 80px;
+    margin-left: 15px;
     margin-top: 20px;
+    height: 320px;
 }
 
-#info-column{
+.info-column{
+    flex-wrap: wrap;
     padding-right: 4rem;
+    height: 50px;
+}
+
+.medium-col{
+    width: 150px;
+}
+
+.info-column h3{
+    height: 40px;
+    padding-bottom: .5rem;
+}
+
+#artist-info{
+    width: 200px;
 }
 
 .show-btn-container{
@@ -48,11 +90,10 @@ body{
 }
 
 .img-thumbnail{
-    width: 90%;
-    height: 90%;
-    margin-top: 31.5px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 27px;
     transition: transform 250ms;
-    position: absolute;
     z-index: 1;
     object-fit: contain;
 }
@@ -60,9 +101,10 @@ body{
 .img-thumbnail:hover{
     transform: translate(20px, -20px);
     z-index: 1;
-    }
+}
 
 .subtext-container h3{
+    align-items: center;
     font-size: 1em;
     font-weight: 700;
 }

@@ -15,12 +15,12 @@
         <div class="col-9 d-flex flex-column py-5">
             <h2 class="fw-bold">{{ $comic->title }}
             <h3 class="fs-5">{{ $comic->description }} </h3>
-            <h3 class="fs-2">Price: </h3> {{ $comic->price }} $
+            <h3 class="fs-2">Price: </h3> {{ $comic->price }}
             <h2>Series: </h2>{{ $comic->series }} 
             <h2>Sale Date: </h2>{{ $comic->sale_date }}
             <h2>Genre: </h2>{{ $comic->type }}
             <h2>Artist(s): </h2>{{ $comic->artists }}
-            <h2>Writer(s): </h2>{{ $comic->write2s }}
+            <h2>Writer(s): </h2>{{ $comic->writers }}
         </div>
     </section>
 
