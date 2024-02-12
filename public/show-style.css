@@ -1,0 +1,26 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,12,121,1) 27%, rgba(255,0,0,1) 100%);
+    margin: 2rem 120px;
+    overflow-x: hidden;
+    background-attachment: fixed
+}
+
+label{
+    color: white;
+    display: block;
+}
+
+input{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0 15px 0;
+    box-sizing: border-box;
+}
+
+#submit-btn{
+    width: 20%;
+    background-color: rgb(255, 140, 63);
+    border: none;
+    border-radius: 12px;
+} 

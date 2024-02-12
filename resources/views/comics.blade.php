@@ -52,7 +52,7 @@
                                     <div class="info-column" class="d-flex flex-column mb-3">
                                         <h3>Writer(s)</h3>
                                         <h4 id="artist-info">{{ $comic->writers }}</h4>
-                                    </div>
+                                    </div>       
                                 </div>
                             </div>
                     </div>

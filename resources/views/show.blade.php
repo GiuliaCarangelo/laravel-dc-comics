@@ -15,12 +15,23 @@
         <div class="col-9 d-flex flex-column py-5">
             <h2 class="fw-bold">{{ $comic->title }}
             <h3 class="fs-5">{{ $comic->description }} </h3>
-            <h3 class="fs-2">Price: </h3> {{ $comic->price }}
-            <h2>Series: </h2>{{ $comic->series }} 
-            <h2>Sale Date: </h2>{{ $comic->sale_date }}
-            <h2>Genre: </h2>{{ $comic->type }}
-            <h2>Artist(s): </h2>{{ $comic->artists }}
-            <h2>Writer(s): </h2>{{ $comic->writers }}
+            <h3 class="fs-2">Price: </h3> 
+            <h5 class="d-inline-block fw-lighter">{{ $comic->price }}</h5>
+            <h2 class="d-inline-block">Series: </h2>
+            <h5 class="d-inline-block fw-lighter">{{ $comic->series }}</h5> 
+            <h2>Sale Date: </h2>
+            <h5 class="d-inline-block fw-lighter">{{ $comic->sale_date }}</h5>
+            <h2>Genre: </h2>
+            <h5 class="d-inline-block fw-lighter">{{ $comic->type }}</h5>
+            <h2>Artist(s): </h2>
+            <h5 class="d-inline-block fw-lighter">{{ $comic->artists }}</h5>
+            <h2>Writer(s): </h2>
+            <h5 class="d-inline-block fw-lighter">{{ $comic->writers }}</h5>
+            <div class="btn-container d-flex justify-content-end pe-5">
+                <button class="btn btn-primary me-2"><a class="text-black text-decoration-none" href="{{ route('comics.show', $comic->id) }}">Show</a></button>
+                <button class="btn btn-primary me-2"><a class="text-black text-decoration-none" href="{{ route('comics.edit', $comic->id) }}">Edit</a></button>
+                <button class="btn btn-primary"><a class="text-black text-decoration-none" href="{{ route('comics.index') }}">Go Back</a></button>
+            </div>
         </div>
     </section>
 

@@ -117,3 +117,17 @@ header .main-logo{
 .subtext-container h4{
     font-size: .8rem;
 }
+
+.btn-container{
+    padding-top: 60px;
+    height: 40px;
+    z-index: 4;
+}
+
+.btn-container button{
+    padding: .5rem .3rem .5rem .3rem;
+    height: 40px;
+    width: auto;
+    text-align: center;
+    margin-right: .5rem;
+}
